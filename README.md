@@ -10,16 +10,16 @@ totalSupply: An unsigned integer that represents the token's entire supply.
 balances: An association between addresses and the accompanying token balances.
 3. The contract provides a mint function that adds a specified amount to both the balance at the "sender" address and the overall supply:
    
-Parameters:
+# Parameters:
 _address: The address to which the tokens will be minted.
 _value: The amount of tokens to be minted.
-Actions:
-~ Increase the totalSupply by _value.
-~ Increase the balance of the _address by _value.
+# Actions:
+ Increase the totalSupply by _value.
+ Increase the balance of the _address by _value.
 
 5. The contract has a burn function that decreases the total supply and the balance of the "sender" address by a given value:
 
-Parameters:
+# Parameters:
 _address: The address from which the tokens will be burned.
 _value: The amount of tokens to be burned.
 Actions:
@@ -31,12 +31,12 @@ Install the MyToken contract on an Ethereum network that is supported.
 When the contract is launched, you may communicate with it by calling the following functions:
 mint: allocates newly created tokens to a certain address.
 
-Parameters:
+# Parameters:
 _address: The address to which the tokens will be minted.
 _value: The amount of tokens to be minted.
 burn: Reduces the total supply and the balance of a given address by burning existing tokens.
 
-Parameters:
+# Parameters:
 _address: The address from which the tokens will be burned.
 _value: The amount of tokens to be burned.
 # License
