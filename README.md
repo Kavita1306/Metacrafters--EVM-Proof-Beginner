@@ -14,8 +14,8 @@ Parameters:
 _address: The address to which the tokens will be minted.
 _value: The amount of tokens to be minted.
 Actions:
-Increase the totalSupply by _value.
-Increase the balance of the _address by _value.
+~ Increase the totalSupply by _value.
+~ Increase the balance of the _address by _value.
 
 5. The contract has a burn function that decreases the total supply and the balance of the "sender" address by a given value:
 
