@@ -3,15 +3,18 @@ This is a simple ERC-20 token contract implemented in Solidity. The contract all
 
 # Requirements
 1. The public variables in the contract include the information about the coin:
+   
 tokenName: A string that represents the token's name.
 
 abbrv: A string that represents the token's abbreviation.
 
 totalSupply: An unsigned integer that represents the token's entire supply.
+
 3. The contract has an address to balance mapping:
+   
 balance: An association between addresses and the accompanying token balances.
 
-4. The contract provides a mint function that adds a specified amount to both the balance at the "sender" address and the overall supply:
+5. The contract provides a mint function that adds a specified amount to both the balance at the "sender" address and the overall supply:
    
 # Parameters:
 _add: The address to which the tokens will be minted.
@@ -19,11 +22,11 @@ _add: The address to which the tokens will be minted.
 _value: The amount of tokens to be minted.
 
 # Actions:
- Increase the totalSupply by _value.
+Increase the totalSupply by _value.
  
- Increase the balance of the _address by _value.
+Increase the balance of the _address by _value.
 
-5. The contract has a burn function that decreases the total supply and the balance of the "sender" address by a given value:
+The contract has a burn function that decreases the total supply and the balance of the "sender" address by a given value:
 
 # Parameters:
 _add: The address from which the tokens will be burned.
@@ -52,6 +55,8 @@ burn: Reduces the total supply and the balance of a given address by burning exi
 
 # Parameters:
 _add: The address from which the tokens will be burned.
+
 _value: The amount of tokens to be burned.
+
 # License
 The MIT License governs this agreement. MIT is the SPDX-License-Identifier.
