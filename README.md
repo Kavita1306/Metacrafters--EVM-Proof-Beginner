@@ -12,7 +12,7 @@ This is a simple ERC-20 token contract implemented in Solidity. The contract all
 
 2. The contract has an address to balance mapping:
    
-balance: An association between addresses and the accompanying token balances.
+   balance: An association between addresses and the accompanying token balances.
 
 3. The contract provides a mint function that adds a specified amount to both the balance at the "sender" address and the overall supply:
    
@@ -26,7 +26,7 @@ Increase the totalSupply by _value.
  
 Increase the balance of the _address by _value.
 
-4.The contract has a burn function that decreases the total supply and the balance of the "sender" address by a given value:
+4. The contract has a burn function that decreases the total supply and the balance of the "sender" address by a given value:
 
 # Parameters:
 _add: The address from which the tokens will be burned.
