@@ -17,8 +17,8 @@ pragma solidity 0.8.18;
 
 contract MyToken {
     // public variables here
-    string public tokenName = "MVP";
-    string public abbrv = "MV";
+    string public tokenName = "Kavita";
+    string public abbrv = "Kavi";
     uint public totalSupply = 0;
     // mapping variable here
     mapping (address=> uint) public balance;
@@ -32,7 +32,7 @@ contract MyToken {
     function burn( address _add,uint _value) public {
         if( balance[_add] >= _value){
             totalSupply -= _value;
-            balance[_add] -= _value;
+            balance[_add] +=  _value;
         }    
     }
 }
